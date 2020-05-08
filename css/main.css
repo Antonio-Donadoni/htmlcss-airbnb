@@ -15,8 +15,22 @@
   background-position: center;
 
 }
-
-/* css image background */
+.layer{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.cityName{
+  position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* css id image background */
 #NewYork{
   background-image: url("../img/NewYork.jpg");
 }

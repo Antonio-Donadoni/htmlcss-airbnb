@@ -35,8 +35,19 @@ body {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 3px 3px 2px #282828;
 }
+
+.container:hover .cityName{
+  color: #282828;
+  text-shadow: 3px 3px 3px #A8A8A8;
+
+}
+.container:hover .layer{
+  background-color: rgba(255,255,255,0.3);
+}
+
+
 
 /* css id image background */
 

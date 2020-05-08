@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/* css container */
+
 .container{
   position:relative;
   width: 100%;
@@ -13,13 +18,14 @@
   border: 3px white solid;
   background-size: cover;
   background-position: center;
-
 }
+
 .layer{
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
 }
+
 .cityName{
   position: absolute;
    left: 50%;
@@ -29,15 +35,19 @@
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
 }
+
 /* css id image background */
+
 #NewYork{
   background-image: url("../img/NewYork.jpg");
 }
+
 #Shanghai{
   background-image: url("../img/Shanghai.jpg");
-
 }
+
 #London{
   background-image: url("../img/london.jpg");
   background-position: bottom;

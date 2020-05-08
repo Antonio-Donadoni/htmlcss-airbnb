@@ -1,5 +1,30 @@
+/* css generale */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container{
+  position:relative;
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  border: 3px white solid;
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* css image background */
+#NewYork{
+  background-image: url("../img/NewYork.jpg");
+}
+#Shanghai{
+  background-image: url("../img/Shanghai.jpg");
+
+}
+#London{
+  background-image: url("../img/london.jpg");
+  background-position: bottom;
 }

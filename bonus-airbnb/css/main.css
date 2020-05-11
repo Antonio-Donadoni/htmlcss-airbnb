@@ -1,0 +1,97 @@
+/* css generale */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/* css container */
+
+.container{
+  position:relative;
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  border: 3px white solid;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer{
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6));
+}
+
+.cityName{
+  position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 2px #282828;
+  height:150px;
+}
+
+.container:hover .cityName{
+  color: #282828;
+  text-shadow: 3px 3px 3px #A8A8A8;
+
+}
+.container:hover .layer{
+  background-image:radial-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+}
+
+
+
+/* css id image background */
+
+#NewYork{
+  background-image: url("../img/NewYork.jpg");
+}
+
+#Shanghai{
+  background-image: url("../img/Shanghai.jpg");
+}
+
+#London{
+  background-image: url("../img/london.jpg");
+  background-position: bottom;
+}
+
+.gradient-button-1 {
+     position: relative;
+     margin-left: 50%;
+     transform: translateX(-50%);
+     z-index: 3;
+     text-align: center;
+     display: block;
+     padding: 5px 10px;
+     font-size: 1.2rem;
+     background-color: transparent;
+     border: 4px solid white;
+     color: white;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-shadow: 1px 1px 1px #282828;
+     outline: none;
+     transition: all 0.5s ease;
+   }
+   .gradient-button-1:hover {
+     background-size: 100%;
+     background-image: linear-gradient(to top right, hsl(0, 0%, 16%),hsl(0, 0%, 36%));
+     color: white;
+     text-shadow: 1px 1px 0 black;
+   }
+   .container:hover .gradient-button-1 {
+     border: 4px solid transparent;
+     border-image: linear-gradient(to top right, hsl(0, 0%, 16%),hsl(0, 0%, 36%));
+     border-image-slice: 1;
+
+   }
